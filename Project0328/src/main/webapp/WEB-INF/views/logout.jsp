@@ -9,7 +9,8 @@
 		<title>Insert title here</title>
 		<script type="text/javascript">
 			alert('로그아웃을 하셨습니다.');
-			location.href="<%=request.getParameter("redirect") %>";
+			location.href="/main";
+<%-- 			location.href="<%=request.getParameter("redirect") %>"; --%>
 		</script>
 		
 		

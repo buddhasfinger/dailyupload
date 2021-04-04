@@ -166,9 +166,9 @@ $(document).ready(function() {
 			</div>
 			<div id="snb">
 				<c:choose>
-				<c:when test="${flag ==null || flag=='fail' }"> 
+				<c:when test="${session_flag ==null || session_flag=='fail' }"> 
 				<ul>
-					<li><a href="login?redirect=main">LOGIN</a></li>
+					<li><a href="/login?redirect=/main">LOGIN</a></li>
 					<li><a href="#">JOIN</a></li>
 					<li><a href="#">MY PAGE</a></li>
 					<li><a href="#">CART</a></li>
@@ -176,7 +176,7 @@ $(document).ready(function() {
 				</c:when>
 				<c:otherwise> 
 				<ul>
-					<li><a href="logout.jsp?redirect=main.jsp">LOGOUT</a></li>
+					<li><a href="/logout">LOGOUT</a></li>
 					<li><a href="#">JOIN</a></li>
 					<li><a href="#">MY PAGE</a></li>
 					<li><a href="#">CART</a></li>
@@ -250,7 +250,7 @@ $(document).ready(function() {
 					</ul>
 				</li>
 				<li class="t1"><a href="#" id="topNavi7">선물세트</a></li>
-				<li class="t2"><a href="#" id="topNavi8">대량구매</a></li>
+				<li class="t2"><a href="/list" id="topNavi8">희망도서신청</a></li>
 			</ul>
 		</div>
 
