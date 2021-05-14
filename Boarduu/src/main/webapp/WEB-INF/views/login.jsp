@@ -20,7 +20,8 @@
 			},
 			contentType:"application/json",
 			success:function(data){  //받는 데이터
-				if(data.loginCheck==1){
+				alert(data.mem);
+				if(data!=null){
 					alert("로그인 성공");
 					location.href="/";
 				}else{

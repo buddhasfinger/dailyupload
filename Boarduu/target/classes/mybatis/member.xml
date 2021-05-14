@@ -3,4 +3,11 @@
 
 <mapper namespace="member">
 
+	<select id="login" resultType="com.java.lec.model.Member">
+		SELECT lm_user, lm_pw1 
+		  FROM lmember
+		 WHERE lm_user = #{id}
+		   AND lm_pw1 = #{pw}   
+	</select>
+
 </mapper>

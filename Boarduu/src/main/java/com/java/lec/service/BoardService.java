@@ -6,6 +6,6 @@ import com.java.lec.model.Member;
 
 public interface BoardService {
 
-	Map loginCheck(Member member);
+	Member loginCheck(Member member);
 
 }
