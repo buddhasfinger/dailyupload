@@ -3,22 +3,25 @@ package com.java.lec.model;
 public class Board {
 
 	private int bid,bhit,bgroup,bstep,bindent;
-	private String bname,btitle,bcontent,bfilename,bdate;
+	private String lm_user,lm_name,lm_nname,btitle,bcontent,bfilename,bdate,bpw;
 	
 	public Board() {
 	}
-	public Board(int bid, int bhit, int bgroup, int bstep, int bindent, String bname, String btitle, String bcontent,
-			String bfilename, String bdate) {
+	public Board(int bid, int bhit, int bgroup, int bstep, int bindent, String lm_user, String btitle, String bcontent,
+			String bfilename, String bdate, String bpw,String lm_name, String lm_nname) {
 		this.bid = bid;
 		this.bhit = bhit;
 		this.bgroup = bgroup;
 		this.bstep = bstep;
 		this.bindent = bindent;
-		this.bname = bname;
+		this.lm_user = lm_user;
 		this.btitle = btitle;
 		this.bcontent = bcontent;
 		this.bfilename = bfilename;
 		this.bdate = bdate;
+		this.bpw = bpw;
+		this.lm_name= lm_name;
+		this.lm_nname = lm_nname;
 	}
 	public int getBid() {
 		return bid;
@@ -50,11 +53,12 @@ public class Board {
 	public void setBindent(int bindent) {
 		this.bindent = bindent;
 	}
-	public String getBname() {
-		return bname;
+
+	public String getLm_user() {
+		return lm_user;
 	}
-	public void setBname(String bname) {
-		this.bname = bname;
+	public void setLm_user(String lm_user) {
+		this.lm_user = lm_user;
 	}
 	public String getBtitle() {
 		return btitle;
@@ -79,6 +83,24 @@ public class Board {
 	}
 	public void setBdate(String bdate) {
 		this.bdate = bdate;
+	}
+	public String getBpw() {
+		return bpw;
+	}
+	public void setBpw(String bpw) {
+		this.bpw = bpw;
+	}
+	public String getLm_nname() {
+		return lm_nname;
+	}
+	public void setLm_nname(String lm_nname) {
+		this.lm_nname = lm_nname;
+	}
+	public String getLm_name() {
+		return lm_name;
+	}
+	public void setLm_name(String lm_name) {
+		this.lm_name = lm_name;
 	}
 	
 	

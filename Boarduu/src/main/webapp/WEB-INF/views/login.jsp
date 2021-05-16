@@ -16,11 +16,11 @@
 			url:"/loginCheck",
 			type:"get",
 			data:{
-				id:$("#id").val(),pw:$("#pw").val() //보내는 데이터
+				lm_user:$("#id").val(),lm_pw1:$("#pw").val() //보내는 데이터
 			},
 			contentType:"application/json",
 			success:function(data){  //받는 데이터
-				alert(data.mem);
+				alert(data);
 				if(data!=null){
 					alert("로그인 성공");
 					location.href="/";

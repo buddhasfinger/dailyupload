@@ -9,6 +9,7 @@
 <style type="text/css">
 	tr td {border: 1px solid black;}
 	.log {cursor: pointer ;}
+	label {cursor:pointer;}
 </style>
 
 </head>
@@ -17,10 +18,11 @@
 	
 	<c:choose>
 		<c:when test="${session_flag ==null || session_flag =='fail' }">
-			<a href="/login"><label class="log">로그인</label></a>
+			<a href="/login"><label>로그인</label></a>
 		</c:when>
 		<c:otherwise>
-			<a href="/logout"><label>로그아웃</label></a>
+			<h2>${session_nname }님 환영합니다</h2><br>
+			<a href="/logout"><label>로그아웃</label></a><br>
 			<a href="/list"><label>게시판으로 이동</label></a>
 		</c:otherwise>
 	</c:choose>

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.page_on{
+	text-decoration:none;
+	background-color:teal;
+}
+ul{
+	display:flex;
+}
+li{
+	list-style-type:none;
+	margin:3px;
+	
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+ul li a{
+	text-decoration:none;
+    color: black;
+}
+.page_on a{
+	color:white;
+}
